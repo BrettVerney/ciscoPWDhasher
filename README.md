@@ -6,7 +6,7 @@ A Python Cisco MD5 Password Hashing Tool
 **Author:** Brett Verney</br>
 **Version:** v0.1 | 04-04-2020
 
-This script hashes a plain text password using the MD5 algorithm used by Cisco 'Type 5' secrets. It is particularly useful in situations where an engineer when wants to build a full configuration file but doesn't want to list passwords in plain text, or does not have a Cisco device available to generate the hash.
+This script hashes a plain text password using the MD5 algorithm used by Cisco 'Type 5' secrets. It is particularly useful in situations where an engineer wants to build a full configuration file but doesn't want to list passwords in plain text, or does not have a Cisco device available to generate the hash.
 
 ## Cisco Configuration
 
