@@ -1,10 +1,10 @@
-# ciscoMD5hash
+# ciscoType5hash
 A Python Cisco MD5 Password Hashing Tool
 
-**ciscoMD5hash.py**
+**ciscoType5hash.py**
 
 **Author:** Brett Verney</br>
-**Version:** v0.1 | 04-04-2020
+**Version:** v0.2 | 22-04-2020
 
 This script hashes a plain text password using the MD5 algorithm used by Cisco 'Type 5' secrets. It is particularly useful in situations where an engineer wants to build a full configuration file but doesn't want to list passwords in plain text, or does not have a Cisco device available to generate the hash.
 
@@ -25,19 +25,19 @@ For example:<br>
 
 ### Windows
 
-```python ciscoMD5hash.py```
+```python ciscoType5hash.py```
 
 ### MAC / OSX
 
-```python ./ciscoMD5hash.py```
+```python ./ciscoType5hash.py```
 
 **Note:**
-*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoMD5hash.py```
+*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoType5hash.py```
 
 ### Linux
 
-```python ./ciscoMD5hash.py```
+```python ./ciscoType5hash.py```
 
 **Note:**
-*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoMD5hash.py```
+*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoType5hash.py```
 
