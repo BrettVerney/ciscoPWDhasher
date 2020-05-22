@@ -16,7 +16,7 @@ def main():
         else:
             if (char.match(pwd)):
                 hash = md5_crypt.using(salt_size=4).hash(pwd)
-                print ('\n' +'Your MD5 Hash is: ' + (hash))
+                print ('\n' +'Your Cisco Type 5 / MD5 Hash is: ' + (hash))
             else:
                 print ('Illegal characters. Try again.')
                 main()
