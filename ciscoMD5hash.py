@@ -1,3 +1,6 @@
+# Script by Brett Verney | @wifiwizardofoz
+# Version: v0.2 | 22-05-2020
+
 import sys
 import re
 from passlib.hash import md5_crypt
