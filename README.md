@@ -15,19 +15,6 @@ It is particularly useful in situations where an engineer wants to build a full 
  - backports.pbkdf2<br>
  - passlib<br>
 
-## Cisco Configuration
-
-### Cisco IOS/IOS-XE
-
-```username <username> secret {5|7|8|9} <hash>```<br>
-*or*<br>
-```enable secret {5|7|8|9} <hash>```
-  
-For example:<br>
-```username admin secret 5 $1$gBk3$sBeTOYNqovq/iccFjqQoV0```<br>
-*or*<br>
-```enable secret 9 $9$OD7tNTjMffsK4T$x8y1enumMaDqfgNlFeI5z9KtEmiqxP90e5R632s1QNk```
-
 ## Script Usage
 
 ### Windows
@@ -53,6 +40,19 @@ For example:<br>
 The script uses an interactive menu to help choose which hash type is required. An example is below:
 
 ![ciscoPWDhasher Example](https://github.com/wifiwizardofoz/ciscoPWDhasher/blob/master/example.PNG)
+
+## Cisco Configuration
+
+### Cisco IOS/IOS-XE
+
+```username <username> secret {5|7|8|9} <hash>```<br>
+*or*<br>
+```enable secret {5|7|8|9} <hash>```
+  
+For example:<br>
+```username admin secret 5 $1$gBk3$sBeTOYNqovq/iccFjqQoV0```<br>
+*or*<br>
+```enable secret 9 $9$OD7tNTjMffsK4T$x8y1enumMaDqfgNlFeI5z9KtEmiqxP90e5R632s1QNk```
 
 ## Special Thanks
 [Josh Schmelzle](https://github.com/joshschmelzle/) for helping me figure out Type 8 and Type 9 requirements.
