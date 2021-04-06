@@ -1,45 +1,45 @@
-[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/wifiwizardofoz/ciscoType5hash)
+# ciscoPWDhasher
+A Python Cisco Password Hashing Tool for Cisco IOS, IOS-XE and NX-OS
 
-# ciscoType5hash
-A Python Cisco MD5 Password Hashing Tool
-
-**ciscoType5hash.py**
+**ciscoPWDhasher.py**
 
 **Author:** Brett Verney</br>
-**Version:** v0.2 | 22-05-2020
+**Version:** v0.1 | 6-04-2021
 
-This script hashes a plain text password using the MD5 algorithm used by Cisco 'Type 5' secrets. It is particularly useful in situations where an engineer wants to build a full configuration file but doesn't want to list passwords in plain text, or does not have a Cisco device available to generate the hash.
+This script converts a plain text password into a Cisco 'secret' CLI hash. It currently supports Type 5 (MD5), Type 7 (XOR Cipher), Type 8 (PBKDF2-HMAC-SHA256), and Type 9 (scrypt)
+
+It is particularly useful in situations where an engineer wants to build a full configuration file but doesn't want to list passwords in plain text, or does not have access to a Cisco device in order to generate the hash.
 
 ## Cisco Configuration
 
 ### Cisco IOS/IOS-XE
 
-```username <username> secret 5 <md5_hash_password>```<br>
+```username <username> secret {5|7|8|9} <hash>```<br>
 *or*<br>
-```enable secret 5 <md5_hash_password>```
+```enable secret {5|7|8|9} <hash>```
   
 For example:<br>
 ```username admin secret 5 $1$gBk3$sBeTOYNqovq/iccFjqQoV0```<br>
 *or*<br>
-```enable secret 5 $1$gBk3$sBeTOYNqovq/iccFjqQoV0```
+```enable secret 5 $9$OD7tNTjMffsK4T$x8y1enumMaDqfgNlFeI5z9KtEmiqxP90e5R632s1QNk```
 
 ## Script Usage
 
 ### Windows
 
-```python ciscoType5hash.py```
+```python ciscoPWDhasher.py```
 
 ### MAC / OSX
 
-```python ./ciscoType5hash.py```
+```python ./ciscoPWDhasher.py```
 
 **Note:**
-*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoType5hash.py```
+*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoPWDhasher.py```
 
 ### Linux
 
-```python ./ciscoType5hash.py```
+```python ./ciscoPWDhasher.py```
 
 **Note:**
-*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoType5hash.py```
+*If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoPWDhasher.py```
 
