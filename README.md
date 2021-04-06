@@ -1,5 +1,5 @@
 # ciscoPWDhasher
-A Python Cisco Password Hashing Tool for Cisco IOS, IOS-XE and NX-OS
+An offline Cisco Password Hashing Tool for Cisco IOS, IOS-XE and NX-OS.
 
 **ciscoPWDhasher.py**
 
