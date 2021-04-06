@@ -9,10 +9,11 @@ This script converts a plain text password into a Cisco 'secret' CLI hash. It cu
 It is particularly useful in situations where an engineer wants to build a full configuration file but doesn't want to list passwords in plain text, or does not have access to a Cisco device in order to generate the hash.
 
 ## Requirements
-Python 3.6+
-scrypt
-backports.pbkdf2
-passlib
+
+Python 3.6+<br>
+scrypt<br>
+backports.pbkdf2<br>
+passlib<br>
 
 ## Cisco Configuration
 
