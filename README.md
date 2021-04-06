@@ -1,14 +1,18 @@
 # ciscoPWDhasher
 An offline Cisco Password Hashing Tool for Cisco IOS, IOS-XE and NX-OS.
 
-**ciscoPWDhasher.py**
-
 **Author:** Brett Verney</br>
 **Version:** v0.1 | 6-04-2021
 
 This script converts a plain text password into a Cisco 'secret' CLI hash. It currently supports Type 5 (MD5), Type 7 (XOR Cipher), Type 8 (PBKDF2-HMAC-SHA256), and Type 9 (scrypt)
 
 It is particularly useful in situations where an engineer wants to build a full configuration file but doesn't want to list passwords in plain text, or does not have access to a Cisco device in order to generate the hash.
+
+## Requirements
+Python 3.6+
+scrypt
+backports.pbkdf2
+passlib
 
 ## Cisco Configuration
 
