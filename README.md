@@ -43,6 +43,10 @@ For example:<br>
 **Note:**
 *If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoPWDhasher.py```
 
+## Example
+The script uses an interactive menu to help choose which hash type is required. An example is below:
+![ciscoPWDhasher Example](https://github.com/wifiwizardofoz/ciscoPWDhasher/blob/master/example.PNG)
+
 ## Special Thanks
 [Josh Schmelzle](https://github.com/joshschmelzle/) for helping me figure out Type 8 and Type 9 requirements.
 
