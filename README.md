@@ -21,7 +21,7 @@ It is particularly useful in situations where an engineer wants to build a full 
 For example:<br>
 ```username admin secret 5 $1$gBk3$sBeTOYNqovq/iccFjqQoV0```<br>
 *or*<br>
-```enable secret 5 $9$OD7tNTjMffsK4T$x8y1enumMaDqfgNlFeI5z9KtEmiqxP90e5R632s1QNk```
+```enable secret 9 $9$OD7tNTjMffsK4T$x8y1enumMaDqfgNlFeI5z9KtEmiqxP90e5R632s1QNk```
 
 ## Script Usage
 
@@ -42,4 +42,7 @@ For example:<br>
 
 **Note:**
 *If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoPWDhasher.py```
+
+## Special Thanks
+[Josh Schmelzle](https://github.com/joshschmelzle/) for helping me figure out Type 8 and Type 9 requirements.
 
