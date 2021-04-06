@@ -10,7 +10,7 @@ It is particularly useful in situations where an engineer wants to build a full 
 
 ## Requirements
 
-**Python 3.6+**<br>
+**Python 3.6+**<br><br>
 **Python Libraries**<br>
  - scrypt<br>
  - backports.pbkdf2<br>
