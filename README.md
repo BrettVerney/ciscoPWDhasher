@@ -44,6 +44,7 @@ For example:<br>
 *If you have both Python 2 and Python 3 installed you should run* ```python3 ./ciscoPWDhasher.py```
 
 ## Example
+
 The script uses an interactive menu to help choose which hash type is required. An example is below:
 ![ciscoPWDhasher Example](https://github.com/wifiwizardofoz/ciscoPWDhasher/blob/master/example.PNG)
 
