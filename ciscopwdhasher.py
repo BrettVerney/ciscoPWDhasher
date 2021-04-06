@@ -1,3 +1,7 @@
+# Script by Brett Verney (@wifiwizardofoz)
+# Contributors - Josh Schmelzle (@joshschmelzle)
+# Version: v0.1 | 6-04-2021
+
 import sys
 import os
 import random
