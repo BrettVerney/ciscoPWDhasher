@@ -10,11 +10,11 @@ It is particularly useful in situations where an engineer wants to build a full 
 
 ## Requirements
 
- Python 3.6+<br><br>
- **Python Libraries**
-  - scrypt<br>
-  - backports.pbkdf2<br>
-  - passlib<br>
+- Python 3.6+
+- Python Libraries
+ - scrypt
+ - backports.pbkdf2
+ - passlib
 
 ## Script Usage
 
