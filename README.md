@@ -42,7 +42,7 @@ The script uses an interactive menu to help choose which hash type is required. 
 
 ![ciscoPWDhasher Example](https://github.com/wifiwizardofoz/ciscoPWDhasher/blob/master/example.PNG)
 
-## Cisco Configuration
+## Cisco CLI Configuration
 
 ### Cisco IOS/IOS-XE
 
