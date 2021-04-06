@@ -12,9 +12,9 @@ It is particularly useful in situations where an engineer wants to build a full 
 
 - Python 3.6+
 - Python Libraries
- - scrypt
- - backports.pbkdf2
- - passlib
+  - scrypt
+  - backports.pbkdf2
+  - passlib
 
 ## Script Usage
 
