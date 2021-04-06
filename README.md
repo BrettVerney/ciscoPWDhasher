@@ -46,6 +46,7 @@ For example:<br>
 ## Example
 
 The script uses an interactive menu to help choose which hash type is required. An example is below:
+
 ![ciscoPWDhasher Example](https://github.com/wifiwizardofoz/ciscoPWDhasher/blob/master/example.PNG)
 
 ## Special Thanks
