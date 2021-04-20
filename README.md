@@ -1,7 +1,7 @@
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/wifiwizardofoz/ciscoPWDhasher)
 
 # ciscoPWDhasher
-An offline Cisco Password Hashing Tool for Cisco IOS, IOS-XE and NX-OS.
+An offline Cisco Password Hashing Tool for Cisco IOS/IOS-XE
 
 **Author:** Brett Verney</br>
 **Version:** v0.1 | 6-04-2021
