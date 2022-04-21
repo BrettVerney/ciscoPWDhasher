@@ -1,6 +1,6 @@
 # Script by Brett Verney (@wifiwizardofoz)
 # Contributors - Josh Schmelzle (@joshschmelzle), Kyle Kowalczyk(@superadm1n)
-# Version: v0.1 | 6-04-2021
+# Version: v1.0 | 21-04-2021
 
 import sys
 from CiscoPWDhasher import pwd_check, InvalidPassword, type5, type7, type8, type9
