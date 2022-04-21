@@ -58,6 +58,5 @@ For example:<br>
 ```enable secret 9 $9$OD7tNTjMffsK4T$x8y1enumMaDqfgNlFeI5z9KtEmiqxP90e5R632s1QNk```
 
 ## Special Thanks
-[Josh Schmelzle](https://github.com/joshschmelzle/) for helping me figure out Type 8 and Type 9 requirements.
-[Kyle Kowalczyk](https://github.com/superadm1n/) for basically turning this in to something usuable by systems and people other than just script n00bz.
-
+[Josh Schmelzle](https://github.com/joshschmelzle/) for helping me figure out Type 8 and Type 9 requirements.</br>
+[Kyle Kowalczyk](https://github.com/superadm1n/) for basically turning this in to something usuable by systems and people other than just copy and paste script n00bz.
