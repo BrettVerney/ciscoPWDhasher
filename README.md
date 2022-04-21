@@ -59,4 +59,5 @@ For example:<br>
 
 ## Special Thanks
 [Josh Schmelzle](https://github.com/joshschmelzle/) for helping me figure out Type 8 and Type 9 requirements.
+[Kyle Kowalczyk](https://github.com/superadm1n/) for basically turning this in to something usuable by systems and people other than just script n00bz.
 
