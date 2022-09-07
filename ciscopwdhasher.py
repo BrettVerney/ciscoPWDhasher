@@ -1,8 +1,14 @@
+#!/usr/bin/env python3
+
 # Script by Brett Verney (@wifiwizardofoz)
 # Contributors - Josh Schmelzle (@joshschmelzle), Kyle Kowalczyk(@superadm1n)
 # Version: v1.0 | 21-04-2021
 
 import sys
+MIN_PYTHON = (3, 6)
+if sys.version_info < MIN_PYTHON:
+    sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
+
 from CiscoPWDhasher import pwd_check, InvalidPassword, type5, type7, type8, type9
 
 
@@ -60,7 +66,7 @@ def app_start():
         elif choice == 3:
             cleartext_password = pwd_input()
             hash = type8(cleartext_password)
-            print(f'Your Cisco type 7 password is: {hash}')
+            print(f'Your Cisco type 8 password is: {hash}')
         elif choice == 4:
             cleartext_password = pwd_input()
             hash = type9(cleartext_password)
