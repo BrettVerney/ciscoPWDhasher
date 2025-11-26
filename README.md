@@ -4,7 +4,7 @@
 An offline Cisco Password Hashing Tool for Cisco IOS/IOS-XE
 
 **Author:** Brett Verney</br>
-**Version:** v1.0 | 21-04-2022
+**Version:** v1.1 | 27-11-2025
 
 This script converts a plain text password into a Cisco 'secret' CLI hash. It currently supports Type 5 (MD5), Type 7 (XOR Cipher), Type 8 (PBKDF2-HMAC-SHA256), and Type 9 (scrypt)
 
@@ -14,9 +14,8 @@ It is particularly useful in situations where an engineer wants to build a full 
 
 - Python 3.6+
 - Python Libraries
-  - scrypt
-  - backports.pbkdf2
-  - passlib
+  - passlib (for Type 5 and Type 7)
+  - Standard library `hashlib` (used for Type 8 PBKDF2-HMAC-SHA256 and Type 9 scrypt)
 
 ## Script Usage
 

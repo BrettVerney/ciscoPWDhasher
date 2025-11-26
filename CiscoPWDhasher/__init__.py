@@ -1,7 +1,6 @@
-import random
-import base64   
-import scrypt
-from backports.pbkdf2 import pbkdf2_hmac
+import base64
+import hashlib
+import secrets
 from passlib.hash import md5_crypt
 from passlib.hash import cisco_type7
 
@@ -62,18 +61,13 @@ def type8(pwd):
     :return: Hashed password
     """
     pwd_check(pwd)
-    salt_chars = []
-    for _ in range(14):
-        salt_chars.append(random.choice(cisco_b64chars))
-    salt = "".join(salt_chars)
+    salt = "".join(secrets.choice(cisco_b64chars) for _ in range(14))
     # Create the hash
-    hash = pbkdf2_hmac("sha256", pwd.encode(), salt.encode(), 20000, 32)
+    hash_bytes = hashlib.pbkdf2_hmac("sha256", pwd.encode(), salt.encode(), 20000, 32)
     # Convert the hash from Standard Base64 to Cisco Base64
-    hash = base64.b64encode(hash).decode().translate(b64table)[:-1]
+    hash_string = base64.b64encode(hash_bytes).decode().translate(b64table)[:-1]
     # Print the hash in the Cisco IOS CLI format
-    password_string = f"$8${salt}${hash}"
-    
-    return password_string
+    return f"$8${salt}${hash_string}"
     
     
 def type9(pwd):
@@ -84,15 +78,11 @@ def type9(pwd):
     :return: Hashed password
     """
     pwd_check(pwd)
-    salt_chars = []
-    for _ in range(14):
-        salt_chars.append(random.choice(cisco_b64chars))
-    salt = "".join(salt_chars)
+    salt = "".join(secrets.choice(cisco_b64chars) for _ in range(14))
     # Create the hash
-    hash = scrypt.hash(pwd.encode(), salt.encode(), 16384, 1, 1, 32)
+    hash_bytes = hashlib.scrypt(pwd.encode(), salt=salt.encode(), n=16384, r=1, p=1, dklen=32)
     # Convert the hash from Standard Base64 to Cisco Base64
-    hash = base64.b64encode(hash).decode().translate(b64table)[:-1]
+    hash_string = base64.b64encode(hash_bytes).decode().translate(b64table)[:-1]
     # Print the hash in the Cisco IOS CLI format
-    password_string = f'$9${salt}${hash}'
-    return password_string
+    return f"$9${salt}${hash_string}"
     
